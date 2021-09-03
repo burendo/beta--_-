@@ -5,7 +5,7 @@ const StageApp = Vue.createApp({
       okMessage: '正解！',
       ngMessage: 'そのキーワードは違うようだぞ！？',
       /* 解答 */
-      stage1CorrectAnswer: 'あああ',
+      stage1CorrectAnswer: '鳥',
       stage201CorrectAnswer: 'いいい',
       stage202CorrectAnswer: 'ううう',
       stage203CorrectAnswer: 'えええ',
