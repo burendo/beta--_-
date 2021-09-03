@@ -1,54 +1,4 @@
-const StageApp = Vue.createApp({
-  data() {
-    return {
-      /* 送信ボタン上下に表示されるメッセージ */
-      okMessage: '正解！',
-      ngMessage: 'そのキーワードは違うようだぞ！？',
-      /* 解答 */
-      stage1CorrectAnswer: '鳥',
-      stage201CorrectAnswer: 'いいい',
-      stage202CorrectAnswer: 'ううう',
-      stage203CorrectAnswer: 'えええ',
-      stage204CorrectAnswer: 'おおお',
-      stage301CorrectAnswer: 'かかか',
-      stage302CorrectAnswer: 'ききき',
-      stage303CorrectAnswer: 'くくく',
-      stage304CorrectAnswer: 'けけけ',
-      stage305CorrectAnswer: 'こここ',
-      stage306CorrectAnswer: 'さささ',
-      /* stage1 */
-      stage1Answer: false, // 正解かどうか
-      stage1: '',          // インプットエリアの入力の値
-      stage1Message: '',   // 送信ボタン上下に表示されるメッセージ
-      stage1Clear: false,  // ステージクリア
-      /* stage2 */
-      stage201Answer: false, // 正解かどうか
-      stage202Answer: false,
-      stage203Answer: false,
-      stage204Answer: false,
-      stage201: '',          // インプットエリアの入力の値
-      stage202: '',
-      stage203: '',
-      stage204: '',
-      stage201Message: '',  // 送信ボタン上下に表示されるメッセージ
-      stage202Message: '',
-      stage203Message: '',
-      stage204Message: '',
-      stage2Clear: false,  // ステージクリア
-      /* stage3 */
-      stage3Answer: false, // 正解かどうか
-      stage301: '',        // インプットエリアの入力の値
-      stage302: '',
-      stage303: '',
-      stage304: '',
-      stage305: '',
-      stage306: '',
-      stage3Message: '',  // 送信ボタン上下に表示されるメッセージ
-      stage3Clear: false, // ステージクリア
-    }
-  },
-  
-  'use strict';
+'use strict';
 
 const CHRHEIGHT = 9;
 const CHRWIDTH = 8;
@@ -226,7 +176,56 @@ window.onload = function()
     window.addEventListener("resize", function() {WmSize()});
     setInterval(function() {WmTimer()}, 33);
 }
-  
+
+const StageApp = Vue.createApp({
+  data() {
+    return {
+      /* 送信ボタン上下に表示されるメッセージ */
+      okMessage: '正解！',
+      ngMessage: 'そのキーワードは違うようだぞ！？',
+      /* 解答 */
+      stage1CorrectAnswer: '鳥',
+      stage201CorrectAnswer: 'いいい',
+      stage202CorrectAnswer: 'ううう',
+      stage203CorrectAnswer: 'えええ',
+      stage204CorrectAnswer: 'おおお',
+      stage301CorrectAnswer: 'かかか',
+      stage302CorrectAnswer: 'ききき',
+      stage303CorrectAnswer: 'くくく',
+      stage304CorrectAnswer: 'けけけ',
+      stage305CorrectAnswer: 'こここ',
+      stage306CorrectAnswer: 'さささ',
+      /* stage1 */
+      stage1Answer: false, // 正解かどうか
+      stage1: '',          // インプットエリアの入力の値
+      stage1Message: '',   // 送信ボタン上下に表示されるメッセージ
+      stage1Clear: false,  // ステージクリア
+      /* stage2 */
+      stage201Answer: false, // 正解かどうか
+      stage202Answer: false,
+      stage203Answer: false,
+      stage204Answer: false,
+      stage201: '',          // インプットエリアの入力の値
+      stage202: '',
+      stage203: '',
+      stage204: '',
+      stage201Message: '',  // 送信ボタン上下に表示されるメッセージ
+      stage202Message: '',
+      stage203Message: '',
+      stage204Message: '',
+      stage2Clear: false,  // ステージクリア
+      /* stage3 */
+      stage3Answer: false, // 正解かどうか
+      stage301: '',        // インプットエリアの入力の値
+      stage302: '',
+      stage303: '',
+      stage304: '',
+      stage305: '',
+      stage306: '',
+      stage3Message: '',  // 送信ボタン上下に表示されるメッセージ
+      stage3Clear: false, // ステージクリア
+    }
+  },
   methods: {
     /* stage1の入力を判定します */
     stage1AnswerInput(stage1) {
