@@ -67,7 +67,7 @@ body {
     width: 100vw;
     height: 3000px;
     background-color: #1F1D1D;
-/*     z-index: 300; */
+    z-index: 300;
 }
 
 #subtitle {
@@ -89,9 +89,9 @@ body {
     line-height: 100px;
 }
 
-img {
+/* img {
   width: 100%;
-}
+} */
 
 figure {
   margin: 0;
