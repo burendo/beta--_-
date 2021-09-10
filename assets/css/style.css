@@ -66,8 +66,8 @@ body {
     top: 800px;
     width: 100vw;
     height: 3000px;
-    background-color: #1F1D1D;
-    z-index: 300;
+/*     background-color: #1F1D1D;
+    z-index: 300; */
 }
 
 #subtitle {
