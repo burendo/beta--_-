@@ -12,9 +12,6 @@ const scrollEvent = function () {
     });
 };
 
-scrollEvent();
-
-
 const StageApp = Vue.createApp({
   data() {
     return {
@@ -144,3 +141,5 @@ const StageApp = Vue.createApp({
     },
   }
 }).mount('#stage')
+
+scrollEvent();
