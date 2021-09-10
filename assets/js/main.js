@@ -1,16 +1,18 @@
-// let blackbox = document.getElementById("blackbox");
+let blackbox = document.getElementById("blackbox");
 
-// const scrollEvent = function () {
-//     window.addEventListener("scroll", function () {
+const scrollEvent = function () {
+    window.addEventListener("scroll", function () {
 
-//         // スクロール量の取得
-//         let scrollValue = window.pageYOffset;
+        // スクロール量の取得
+        let scrollValue = window.pageYOffset;
 
-//         blackbox.style.opacity = scrollValue / 800;
+        blackbox.style.opacity = scrollValue / 800;
 
-//         if (scrollValue > 1000) {blackbox.style.opacity = 0;}
-//     });
-// };
+        if (scrollValue > 1000) {blackbox.style.opacity = 0;}
+    });
+};
+
+scrollEvent();
 
 const StageApp = Vue.createApp({
   data() {
@@ -141,5 +143,3 @@ const StageApp = Vue.createApp({
     },
   }
 }).mount('#stage')
-
-// scrollEvent();
