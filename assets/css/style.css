@@ -10,6 +10,7 @@ body {
   overflow-x: hidden;
   font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   font-size: 18px;
+  background-color: black;
   line-height: 1.77778;
   font-weight: bold;
   text-decoration: none;
@@ -17,6 +18,75 @@ body {
   list-style: none;
   color: #000;
   margin: 0;
+}
+
+.sticky {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#titlea {
+    position: absolute;
+    top: -200px;
+    left: -50px;
+}
+
+#titlep {
+    width: 900px;
+    height: 1300px;
+}
+
+#titleimg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/Users/okazakishingo/Documents/Web/プロN\ サイト/img/titleimg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#blackbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    background-color: black;
+}
+
+#textbox {
+    position: absolute;
+    top: 800px;
+    width: 100vw;
+    height: 4000px;
+    background-color: #1F1D1D;
+    z-index: 300;
+}
+
+#subtitle {
+    margin-left: 100px;
+    position: relative;
+    color: white;
+    font-size: 100px;
+    z-index: 400px;
+    font-family: 凸版文久明朝;
+}
+
+.story {
+    position: absolute;
+    left: 100px;
+    color: white;
+    font-size: 30px;
+    z-index: 400px;
+    font-family: 游教科書体 横用;
+    line-height: 100px;
 }
 
 img {
