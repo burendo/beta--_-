@@ -1,19 +1,3 @@
-let blackbox = document.getElementById("blackbox");
-
-const scrollEvent = function () {
-    window.addEventListener("scroll", function () {
-
-        // スクロール量の取得
-        let scrollValue = window.pageYOffset;
-
-        blackbox.style.opacity = scrollValue / 800;
-
-        if (scrollValue > 1000) {blackbox.style.opacity = 0;}
-    });
-};
-
-scrollEvent();
-
 const StageApp = Vue.createApp({
   data() {
     return {
@@ -21,7 +5,7 @@ const StageApp = Vue.createApp({
       okMessage: '正解！',
       ngMessage: 'そのキーワードは違うようだぞ！？',
       /* 解答 */
-      stage1CorrectAnswer: '鳥',
+      stage1CorrectAnswer: 'あああ',
       stage201CorrectAnswer: 'いいい',
       stage202CorrectAnswer: 'ううう',
       stage203CorrectAnswer: 'えええ',
