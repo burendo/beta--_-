@@ -5,62 +5,74 @@ const StageApp = Vue.createApp({
       okMessage: '正解！',
       ngMessage: 'そのキーワードは違うようだぞ！？',
       /* 解答 */
-      stage1CorrectAnswer: 'あああ',
-      stage201CorrectAnswer: 'いいい',
-      stage202CorrectAnswer: 'ううう',
-      stage203CorrectAnswer: 'えええ',
-      stage204CorrectAnswer: 'おおお',
-      stage301CorrectAnswer: 'かかか',
-      stage302CorrectAnswer: 'ききき',
-      stage303CorrectAnswer: 'くくく',
-      stage304CorrectAnswer: 'けけけ',
-      stage305CorrectAnswer: 'こここ',
-      stage306CorrectAnswer: 'さささ',
-      /* stage1 */
-      stage1Answer: false, // 正解かどうか
-      stage1: '',          // インプットエリアの入力の値
-      stage1Message: '',   // 送信ボタン上下に表示されるメッセージ
+      stage101CorrectAnswer: 'a',
+      stage102CorrectAnswer: 'a',
+      stage201CorrectAnswer: 'a',
+      stage202CorrectAnswer: 'a',
+      stage301CorrectAnswer: 'a',
+      stage302CorrectAnswer: 'a',
+      stage401CorrectAnswer: 'a',
+      stage402CorrectAnswer: 'a',
+      /* stage2 */
+      stage101Answer: false, // 正解かどうか
+      stage102Answer: false,
+      stage101: '',          // インプットエリアの入力の値
+      stage102: '',
+      stage101Message: '',  // 送信ボタン上下に表示されるメッセージ
+      stage102Message: '',
       stage1Clear: false,  // ステージクリア
       /* stage2 */
       stage201Answer: false, // 正解かどうか
       stage202Answer: false,
-      stage203Answer: false,
-      stage204Answer: false,
       stage201: '',          // インプットエリアの入力の値
       stage202: '',
-      stage203: '',
-      stage204: '',
       stage201Message: '',  // 送信ボタン上下に表示されるメッセージ
       stage202Message: '',
-      stage203Message: '',
-      stage204Message: '',
       stage2Clear: false,  // ステージクリア
       /* stage3 */
-      stage3Answer: false, // 正解かどうか
-      stage301: '',        // インプットエリアの入力の値
+      stage301Answer: false, // 正解かどうか
+      stage302Answer: false,
+      stage301: '',          // インプットエリアの入力の値
       stage302: '',
-      stage303: '',
-      stage304: '',
-      stage305: '',
-      stage306: '',
-      stage3Message: '',  // 送信ボタン上下に表示されるメッセージ
-      stage3Clear: false, // ステージクリア
+      stage301Message: '',  // 送信ボタン上下に表示されるメッセージ
+      stage302Message: '',
+      stage3Clear: false,  // ステージクリア
+
+      /* stage4 */
+      stage401Answer: false, // 正解かどうか
+      stage402Answer: false,
+      stage401: '',          // インプットエリアの入力の値
+      stage402: '',
+      stage401Message: '',  // 送信ボタン上下に表示されるメッセージ
+      stage402Message: '',
+      stage4Clear: false,  // ステージクリア
     }
   },
   methods: {
     /* stage1の入力を判定します */
-    stage1AnswerInput(stage1) {
-      if(stage1 === this.stage1CorrectAnswer) {
-        this.stage1Answer = true;
-        this.stage1Message = '';
+    stage101AnswerInput(stage101) {
+      if(stage101 === this.stage101CorrectAnswer) {
+        this.stage101Answer = true;
+        this.stage101Message = this.okMessage;
       } else {
-        this.stage1Answer = false;
-        this.stage1Message = this.ngMessage; 
+        this.stage101Answer = false;
+        this.stage101Message = this.ngMessage;
+      }
+    },
+
+    stage102AnswerInput(stage102) {
+      if(stage102 === this.stage102CorrectAnswer) {
+        this.stage102Answer = true;
+        this.stage102Message = this.okMessage;
+      } else {
+        this.stage102Answer = false;
+        this.stage102Message = this.ngMessage;
       }
     },
     /* stage1のクリア画面の動作を設定します */
     stage1NextStage() {
-      this.stage1Answer = false;
+      this.stage101Answer = false;
+      this.stage102Answer = false;
       this.stage1Clear = true;
     },
     /* stage2の入力を判定します */
@@ -73,6 +85,7 @@ const StageApp = Vue.createApp({
         this.stage201Message = this.ngMessage;
       }
     },
+
     stage202AnswerInput(stage202) {
       if(stage202 === this.stage202CorrectAnswer) {
         this.stage202Answer = true;
@@ -82,47 +95,68 @@ const StageApp = Vue.createApp({
         this.stage202Message = this.ngMessage;
       }
     },
-    stage203AnswerInput(stage203) {
-      if(stage203 === this.stage203CorrectAnswer) {
-        this.stage203Answer = true;
-        this.stage203Message = this.okMessage;
-      } else {
-        this.stage203Answer = false;
-        this.stage203Message = this.ngMessage;
-      }
-    },
-    stage204AnswerInput(stage204) {
-      if(stage204 === this.stage204CorrectAnswer) {
-        this.stage204Answer = true;
-        this.stage204Message = this.okMessage;
-      } else {
-        this.stage204Answer = false;
-        this.stage204Message = this.ngMessage;
-      }
-    },
     /* stage2のクリア画面の動作を設定します */
     stage2NextStage() {
       this.stage201Answer = false;
       this.stage202Answer = false;
-      this.stage203Answer = false;
-      this.stage204Answer = false;
       this.stage2Clear = true;
     },
+     /* stage3のクリア画面の動作を設定します */
+    stage3NextStage() {
+      this.stage3Answer = false;
+      this.stage3Clear = true;
+    },
     /* stage3の入力を判定します */
-    stage3AnswerInput(stage301, stage302, stage303, stage304, stage305, stage306) {
-      if(stage301 === this.stage301CorrectAnswer
-        && stage302 === this.stage302CorrectAnswer
-        && stage303 === this.stage303CorrectAnswer
-        && stage304 === this.stage304CorrectAnswer
-        && stage305 === this.stage305CorrectAnswer
-        && stage306 === this.stage306CorrectAnswer
-        ) {
-        this.stage3Answer = true;
-        this.stage3Message = '';
-        window.location.href = 'final.html';
+    stage301AnswerInput(stage301) {
+      if(stage301 === this.stage301CorrectAnswer) {
+        this.stage301Answer = true;
+        this.stage301Message = this.okMessage;
       } else {
-        this.stage3Answer = false;
-        this.stage3Message = this.ngMessage;
+        this.stage301Answer = false;
+        this.stage301Message = this.ngMessage;
+      }
+    },
+
+    stage302AnswerInput(stage302) {
+      if(stage302 === this.stage302CorrectAnswer) {
+        this.stage302Answer = true;
+        this.stage302Message = this.okMessage;
+      } else {
+        this.stage302Answer = false;
+        this.stage302Message = this.ngMessage;
+      }
+    },
+    /* stage3のクリア画面の動作を設定します */
+    stage3NextStage() {
+      this.stage301Answer = false;
+      this.stage302Answer = false;
+      this.stage3Clear = true;
+    },
+    
+    /* stage4の入力を判定します */
+    stage401AnswerInput(stage401) {
+      if(stage401 === this.stage401CorrectAnswer) {
+        this.stage401Answer = true;
+        this.stage401Message = this.okMessage;
+        if (this.stage402Answer == true) {
+          window.location.href = 'final.html';
+        }
+      } else {
+        this.stage401Answer = false;
+        this.stage401Message = this.ngMessage;
+      }
+    },
+
+    stage402AnswerInput(stage402) {
+      if(stage402 === this.stage402CorrectAnswer) {
+        this.stage402Answer = true;
+        this.stage402Message = '';
+        if (this.stage401Answer == true) {
+          window.location.href = 'final.html';
+        }
+      } else {
+        this.stage402Answer = false;
+        this.stage402Message = this.ngMessage;
       }
     },
   }

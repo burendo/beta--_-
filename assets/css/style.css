@@ -45,7 +45,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('../images/titleimg.png');
+  background-image: url('/Users/okazakishingo/Documents/Web/プロN\ サイト/img/titleimg.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -67,8 +67,6 @@ body {
   top: 800px;
   width: 100vw;
   height: 3000px;
-  /* background-color: #1F1D1D; */
-  /* z-index: 300; */
 } 
 
 #subtitle {
@@ -92,7 +90,7 @@ body {
 
 .mondai {
   width: 900px;
-  height: 620px;
+  height: 520px;
   margin-left: 80px;
 }
 
