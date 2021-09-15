@@ -8,7 +8,7 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: white;
+  background-color: rgb(255, 249, 220);
   font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   font-size: 18px;
   line-height: 1.77778;
@@ -45,10 +45,11 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('../images/titleimg.png');
+  background-image: url('/Users/okazakishingo/Documents/Web/プロN\ サイト/img/titleimg.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: -10;
 }
 
 #blackbox {
@@ -315,15 +316,15 @@ button {
 * Color
 *********************/
 .bg-color--keycolor {
-  background-color: #39b54a;
+  background-color: #b3966a;
 }
 
 .bg-color--subcolor {
-  background-color: #d9e021;
+  background-color: #a1e978;
 }
 
 .bg-color--gray {
-  background-color: #e6e6e6;
+  background-color: rgb(255, 249, 220);
 }
 
 /*********************
@@ -356,7 +357,7 @@ button {
   -webkit-transform: translate(-3.5px, -3.5px);
           transform: translate(-3.5px, -3.5px);
   -webkit-background-clip: text;
-  -webkit-text-stroke-color: #d9e021;
+  -webkit-text-stroke-color: #a1e978;
   -webkit-text-stroke-width: 0.75px;
 }
 
@@ -367,7 +368,7 @@ button {
 }
 
 .sub-title__bg {
-  background-color: #fcee21;
+  background-color: #a1e978;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -470,6 +471,7 @@ button {
 .header {
   background-color: #fff;
   height: 60px;
+  z-index: 10;
 }
 
 .header .container {
