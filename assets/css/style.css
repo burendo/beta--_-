@@ -35,17 +35,18 @@ body {
 }
 
 #titlep {
-  width: 900px;
-  height: 1300px;
+  position: relative;
+  top: 270px;
+  left: 160px;
 }
 
 #titleimg {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url('../images/titleimg.png');
+  top: 60px;
+  left: 0px;
+  width: 1500px;
+  height: 450px;
+  background-image: url('../images/title.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -65,15 +66,16 @@ body {
 
 #textbox {
   position: absolute;
-  top: 800px;
+  background-color: white;
+  top: 500px;
   width: 100vw;
-  height: 3000px;
+  height: 4000px;
 } 
 
 #subtitle {
   margin-left: 100px;
   position: relative;
-  color: white;
+  color: rgb(37, 36, 36);
   font-size: 100px;
   z-index: 400px;
   font-family: 凸版文久明朝;
@@ -82,7 +84,7 @@ body {
 .story {
   position: absolute;
   left: 100px;
-  color: white;
+  color: rgb(37, 36, 36);
   font-size: 30px;
   z-index: 400px;
   font-family: 游教科書体 横用;
@@ -388,7 +390,7 @@ button {
 }
 
 .section-title--keycolorlight {
-  background-color: #8cc63f;
+  background-color: #97a3b9;
 }
 
 .section-title--keycolorlight .section-title__stage {
@@ -469,7 +471,9 @@ button {
 * header
 *****************/
 .header {
+  position: fixed;
   background-color: #fff;
+  width: 1450px;
   height: 60px;
   z-index: 10;
 }
@@ -488,8 +492,10 @@ button {
 }
 
 .header__logo {
+  position: relative;
+  top: -10px;
   width: 200px;
-  height: 42.8px;
+  height: 40.8px;
 }
 
 .header__name {
@@ -649,5 +655,5 @@ button {
 
 #down {
   position: relative;
-  top: 2900px;
+  top: 2700px;
 }

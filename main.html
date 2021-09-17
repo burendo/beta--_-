@@ -35,10 +35,7 @@
       <div id="sectionStage1" class="stage">
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：1</span>さぁゲームを始めよう！</h2>
-            <p class="text-center">家庭科室に入ることができた！<br>
-              すぐに目に入ったのは黒板にある４つの謎。<br>
-              これらを解くことで、きっと次のステップに繋がるはずだ！</p>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：1</span>さぁ謎を解こう！</h2>
           </div>
           <div>
             <div class="stage-column__container section bg-color--gray">
@@ -94,8 +91,7 @@
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">STAGE：1　クリア！</div>
-              <div class="clear-message__content">黒板の指示に従い、<br>
-                次のステージの謎を解こう！</div>
+              <div class="clear-message__content">次に進もう！</div>
               <button v-on:click="stage1NextStage" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -107,10 +103,18 @@
       <div v-if="stage1Clear" id="sectionStage2" class="stage">
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>黒板に書かれている謎を解け！</h2>
-            <p class="text-center">家庭科室に入ることができた！<br>
-              すぐに目に入ったのは黒板にある４つの謎。<br>
-              これらを解くことで、きっと次のステップに繋がるはずだ！</p>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>杖を貸してもらおう！</h2>
+            <p class="text-center">安倍「え？開かないけど」<br>
+              ロン「いやいやそんなわけ」<br>
+              何度やってみても本が開かない<br>
+              安倍「これもしかして僕、魔法使えない？」<br>
+              とりあえず本を持って学園長の所に行くことにした<br>
+              学園長「魔法が使えないならこれを貸してあげる」<br>
+              木の棒のようなものを渡された<br>
+              学園長「これは魔法が使えなくても使える杖だよ。とても高いものだから今日中に返してね」<br>
+              魔法がなくても使えるらしいので使おうとするが何も起こらない<br>
+              学園長「その杖魔力がたまってないから今からためてもらうね」<br>
+              </p>
           </div>
           <div>
             <div class="stage-column__container section bg-color--gray">
@@ -166,8 +170,8 @@
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">STAGE：2　クリア！</div>
-              <div class="clear-message__content">黒板の指示に従い、<br>
-                次のステージの謎を解こう！</div>
+              <div class="clear-message__content">杖に魔力がたまったよ！<br>
+                次のステージに進もう！</div>
                 <button v-on:click="stage2NextStage" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -179,10 +183,23 @@
       <div v-if="stage2Clear" id="sectionStage3" class="stage">
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>黒板に書かれている謎を解け！</h2>
-            <p class="text-center">家庭科室に入ることができた！<br>
-              すぐに目に入ったのは黒板にある４つの謎。<br>
-              これらを解くことで、きっと次のステップに繋がるはずだ！</p>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>杖を取り返そう！</h2>
+            <p class="text-center">すると木の棒のようなものが光はじめた <br>
+              学園長「はい、これで魔力がたまったよ」<br>
+              僕は綺麗だなと思いながら感謝の言葉を言った<br>
+              安倍「ありがとうございます！」<br>
+              これで本が開けれると思い学園長室からでたら犬が杖をくわえて持っていってしまった！<br>
+              なんでこんなところに犬がいるんだと思いながら僕は必死に追いかけた<br>
+              安倍「待ってー！いーーぬーー！」<br>
+              必死に走っていると壁とぶつかってしまい犬を見失ってしまった<br>
+              安倍「あー、どうしよう　あれが無いと帰れないし、あとで返さないといけないし」<br>
+              すると向こうの方からロンの声が聞こえてきた<br>
+              ロン「おい、ホリーあの犬に杖持っていかれたんだろさっき見えたよ」<br>
+              安倍「どうしたらいいんだろう」<br>
+              するとロンは何か不思議な機械？を取り出した。<br>
+              ロン「これを使うと3分以内に無くした探し物が見つかるんだ」<br>
+              魔法ってすごいんだなと思いながら使ってみることにした<br>
+              </p>
           </div>
           <div>
             <div class="stage-column__container section bg-color--gray">
@@ -238,8 +255,8 @@
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">STAGE：3　クリア！</div>
-              <div class="clear-message__content">黒板の指示に従い、<br>
-                次のステージの謎を解こう！</div>
+              <div class="clear-message__content">犬から杖を取り返した！<br>
+                次に進もう！</div>
                 <button v-on:click="stage3NextStage" onclick="location.href='#sectionStage4'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -251,10 +268,15 @@
       <div v-if="stage3Clear" id="sectionStage4" class="stage">
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：4</span>黒板に書かれている謎を解け！</h2>
-            <p class="text-center">家庭科室に入ることができた！<br>
-              すぐに目に入ったのは黒板にある４つの謎。<br>
-              これらを解くことで、きっと次のステップに繋がるはずだ！</p>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：4</span>元の世界に戻ろう！</h2>
+            <p class="text-center">安倍「こんなところにあった」<br>
+              僕は土を掘って杖を取り出した<br>
+              ロン「あいつこんなところに隠していたんだな」<br>
+              ロンはその犬のことをよく知っている感じで言った<br>
+              安倍「ともかく図書室に行こうか」<br>
+              僕たちは図書室に向かった<br>
+              ロン「さあ、もう一回やってみるんだ」<br>
+              </p>
           </div>
           <div>
             <div class="stage-column__container section bg-color--gray">
