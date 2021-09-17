@@ -519,7 +519,7 @@ button {
 * main
 ********************/
 .top-image {
-  background-image: url("../images/top-image.png");
+  background-image: url("../images/title.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
