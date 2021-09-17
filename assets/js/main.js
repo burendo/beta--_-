@@ -13,6 +13,7 @@ const StageApp = Vue.createApp({
       stage302CorrectAnswer: 'ドミノ',
       stage401CorrectAnswer: '桃太郎',
       stage402CorrectAnswer: '学校',
+      
       /* stage2 */
       stage101Answer: false, // 正解かどうか
       stage102Answer: false,
