@@ -706,7 +706,7 @@ button {
   background-image: url("../images/title.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   padding-top: 30px;
   padding-bottom: 30px;
 }
