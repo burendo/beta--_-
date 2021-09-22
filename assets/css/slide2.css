@@ -12,9 +12,9 @@
     }
   }
 
-#asd {
-    position: absolute;
-    left: 20%;
+#asdf {
+    position: relative;
+    right: 25%;
     width: 300px;
     margin: 0 auto;
 }
@@ -29,7 +29,7 @@ ul {
     margin: 0;
 }
 
-#main {
+#mainz {
     width: 800px;
     height: 550px;
     margin-bottom: 8px;
@@ -63,7 +63,7 @@ nav li:hover {
 }
 
 #prev,
-#next {
+#next1 {
     width: 60px;
 }
 
