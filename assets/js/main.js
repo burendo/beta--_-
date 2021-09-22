@@ -5,15 +5,14 @@ const StageApp = Vue.createApp({
       okMessage: '正解！',
       ngMessage: 'そのキーワードは違うようだぞ！？',
       /* 解答 */
-      stage101CorrectAnswer: 'マット',
-      stage102CorrectAnswer: '理科室',
-      stage201CorrectAnswer: '12',
-      stage202CorrectAnswer: '三角形',
-      stage301CorrectAnswer: '流れ星',
-      stage302CorrectAnswer: 'ドミノ',
-      stage401CorrectAnswer: '桃太郎',
-      stage402CorrectAnswer: '学校',
-      
+      stage101CorrectAnswer: 'a',
+      stage102CorrectAnswer: 'a',
+      stage201CorrectAnswer: 'a',
+      stage202CorrectAnswer: 'a',
+      stage301CorrectAnswer: 'a',
+      stage302CorrectAnswer: 'a',
+      stage401CorrectAnswer: 'a',
+      stage402CorrectAnswer: 'a',
       /* stage2 */
       stage101Answer: false, // 正解かどうか
       stage102Answer: false,
