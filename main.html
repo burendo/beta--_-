@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body style="overflow-y: scroll;">
   <svg width="0" height="0" class="hidden">
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.47 24.94" id="arrow" class="arrow_svg">
       <title>arrow</title>
@@ -31,6 +31,10 @@
     </div>
     <!-- タイトルエリア　ここまで -->
     <div id="stage">
+      <div id="posi-on">
+        <h1 id="mozi-on">音楽を入れたい人は再生してね！</h1>
+        <audio src="assets/images/Mixdown.wav" controls loop></audio>
+      </div>
       <!-- STAGE1　ここから -->
       <div id="sectionStage1" class="stage">
         <section class="section">
@@ -88,11 +92,13 @@
         </section>
         <!-- STAGE1クリア画面　ここから -->
         <section v-if="stage101Answer && stage102Answer" v-bind:class="{isClear:stage101Answer && stage102Answer}" class="section section--clear bg-color--gray">
-          <div class="container">
-            <div class="clear-message">
-              <div class="clear-message__title">STAGE：1　クリア！</div>
-              <div class="clear-message__content">次に進もう！</div>
-              <button v-on:click="stage1NextStage" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+          <div id="back-img">
+            <div class="container" id="stage-p">
+              <div class="clear-message">
+                <div class="clear-message__title">STAGE：1　クリア！</div>
+                <div class="clear-message__content">次に進もう！</div>
+                <button v-on:click="stage1NextStage" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+              </div>
             </div>
           </div>
         </section>
