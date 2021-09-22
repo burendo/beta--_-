@@ -1,22 +1,38 @@
-@media only screen and (min-width: 600px){
-    #main{
-      width: 100px;
-      height: auto;
+#main {
+    width: 800px;
+    height: 550px;
+    margin-bottom: 8px;
+}
+ 
+@media screen and (max-width:900px) { 
+    #main  { 
+        /* display:none; */
+        width: 500px;
+        height: 300px;
+        margin-bottom: 2px;
     }
-  }
+}
 
-@media only screen and (min-width: 800px), print {
-    #main{
-      width: 1000px;
-      height: auto;
+@media screen and (max-width:500px) { 
+    #main  { 
+        width: 300px;
+        height: 200px;
+        margin-bottom: 2px;
+        margin-left: -10px;
     }
-  }
+}
 
 #asd {
     position: absolute;
-    left: 20%;
+    left: 23%;
     width: 300px;
     margin: 0 auto;
+}
+
+@media screen and (max-width:400px) { 
+    #asd  { 
+        left: 10px;
+    }
 }
 
 img {
@@ -27,12 +43,6 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-#main {
-    width: 800px;
-    height: 550px;
-    margin-bottom: 8px;
 }
 
 nav {
@@ -52,6 +62,12 @@ nav li {
     text-align: center;
     cursor: pointer;
     user-select: none;
+}
+
+@media screen and (max-width:400px) { 
+    nav li  { 
+        font-size: 10px;
+    }
 }
 
 nav li:hover {

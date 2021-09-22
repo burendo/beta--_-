@@ -115,8 +115,15 @@ body {
 
 #titlea {
   position: absolute;
-  top: -200px;
+  top: -25%;
   left: -50px;
+}
+
+@media screen and (max-width:900px) { 
+  #titlea  { 
+      top: -25%;
+      left: -300px;
+  }
 }
 
 #titlep {
@@ -138,6 +145,18 @@ body {
   z-index: -10;
 }
 
+@media screen and (max-width:900px) { 
+  #titleimg  { 
+      width: 900px;
+  }
+}
+
+@media screen and (max-width:500px) { 
+  #titleimg  { 
+      width: 500px;
+  }
+}
+
 #blackbox {
   position: fixed;
   top: 0;
@@ -157,6 +176,18 @@ body {
   height: 1400px;
 } 
 
+@media screen and (max-width:900px) { 
+  #textbox  { 
+      width: 900px;
+  }
+}
+
+@media screen and (max-width:500px) { 
+  #textbox  { 
+      width: 500px;
+  }
+}
+
 #subtitle {
   margin-left: 100px;
   position: relative;
@@ -164,6 +195,18 @@ body {
   font-size: 100px;
   z-index: 400px;
   font-family: 凸版文久明朝;
+}
+
+@media screen and (max-width:900px) { 
+  #subtitle  { 
+      font-size: 60px;
+  }
+}
+
+@media screen and (max-width:500px) { 
+  #subtitle  { 
+     font-size: 30px;
+  }
 }
 
 .story {
@@ -190,10 +233,34 @@ body {
   color: rgb(65, 68, 70);
 }
 
+@media screen and (max-width:900px) { 
+  #mozi-on  { 
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:500px) { 
+  #mozi-on  { 
+    font-size: 10px;
+  }
+}
+
 #posi-on {
   position: relative;
   top: 25px;
   left: 40%;
+}
+
+@media screen and (max-width:900px) { 
+  #posi-on  { 
+      left: 20%;
+  }
+}
+
+@media screen and (max-width:500px) { 
+  #posi-on  { 
+     left: 10%;
+  }
 }
 
 img {

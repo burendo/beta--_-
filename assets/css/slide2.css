@@ -1,16 +1,18 @@
-@media only screen and (min-width: 600px){
-    #main{
-      width: 100px;
-      height: auto;
+#mainz {
+    display:inline;
+    width: 800px;
+    height: 550px;
+    margin-bottom: 8px;
+}
+ 
+@media screen and (max-width:900px) { 
+    #mainz  { 
+        width: 500px;
+        height: 300px;
+        margin-bottom: 2px;
     }
-  }
-
-@media only screen and (min-width: 800px), print {
-    #main{
-      width: 1000px;
-      height: auto;
-    }
-  }
+    .mobileHidden { display:inline;}
+}
 
 #asdf {
     position: relative;
@@ -27,12 +29,6 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-#mainz {
-    width: 800px;
-    height: 550px;
-    margin-bottom: 8px;
 }
 
 nav {
@@ -52,6 +48,12 @@ nav li {
     text-align: center;
     cursor: pointer;
     user-select: none;
+}
+
+@media screen and (max-width:400px) { 
+    nav li  { 
+        font-size: 10px;
+    }
 }
 
 nav li:hover {
