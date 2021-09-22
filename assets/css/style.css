@@ -136,7 +136,7 @@ body {
   position: fixed;
   top: 60px;
   left: 0px;
-  width: 1500px;
+  width: 100vw;
   height: 450px;
   background-image: url('../images/title.png');
   background-position: center;
@@ -145,7 +145,7 @@ body {
   z-index: -10;
 }
 
-@media screen and (max-width:900px) { 
+/* @media screen and (max-width:900px) { 
   #titleimg  { 
       width: 900px;
   }
@@ -155,7 +155,7 @@ body {
   #titleimg  { 
       width: 500px;
   }
-}
+} */
 
 #blackbox {
   position: fixed;
